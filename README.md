@@ -1,7 +1,7 @@
 # KTM 390 Enduro R (2026)
 # FOR WHEN MOTHER NATURE SAYS NO!
 
-# https://www.ktm.com/en-us/models/dual-sport/2026-ktm-390-enduror.html
+https://www.ktm.com/en-us/models/dual-sport/2026-ktm-390-enduror.html
 
 # Installation
 
