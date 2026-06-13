@@ -13,5 +13,6 @@ omarchy-theme-install http://github.com/twodogsdave/KTM-390-Enduro-R.git
 <img width="2560" height="1600" alt="preview.png" src="https://github.com/twodogsdave/KTM-390-Enduro-R/blob/main/preview.png" />
 
 Waybar and fastfetch insluded.
-Omarchy theme 'Greek Noir' was used as a base.  Thanks HANCORE.  You make great themes!
+
+Omarchy theme 'Greek-Noir' was used as a base.  Thanks HANCORE.  You make great themes!
 
