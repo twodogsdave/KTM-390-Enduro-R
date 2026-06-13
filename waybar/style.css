@@ -1,0 +1,345 @@
+/* ███████╗████████╗██╗   ██╗██╗     ███████╗    ██████╗███████╗███████╗ */
+/* ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██╔════╝   ██╔════╝██╔════╝██╔════╝ */
+/* ███████╗   ██║    ╚████╔╝ ██║     █████╗     ██║     ███████╗███████╗ */
+/* ╚════██║   ██║     ╚██╔╝  ██║     ██╔══╝     ██║     ╚════██║╚════██║ */
+/* ███████║   ██║      ██║   ███████╗███████╗██╗╚██████╗███████║███████║ */
+/* ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚═╝ ╚═════╝╚══════╝╚══════╝ */
+/* ~/.config/waybar/styles.css */
+
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  background-color: @background;
+  color: @foreground;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 8px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+  color: @foreground;
+}
+
+#workspaces button active {
+  font-size: 18px;
+}
+
+#workspaces button label {
+  transition: color 120ms ease;
+}
+
+#workspaces button.empty label {
+  opacity: 0.6;
+}
+
+#workspaces button:hover label {
+  opacity: 1.0;
+}
+
+#cpu,
+#clock,
+#battery,
+#backlight,
+#pulseaudio,
+#custom-power,
+#custom-timer,
+#custom-gamemode,
+#custom-omarchy,
+#idle_inhibitor,
+#custom-theme-name,
+#custom-updates-pacman,
+#power-profiles-daemon,
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#pulseaudio {
+  margin-left: 8px;
+  margin-right: 6px;
+}
+
+#pulseaudio.muted {
+  margin-left: 8px;
+  margin-right: 12px;
+}
+
+#custom-gamemode {
+  padding: 0px 0px  2px 0px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+#custom-power {
+  margin-left: 1;
+}
+
+#custom-theme-name {
+  color: @foreground;
+  font-weight: 600;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+#custom-visualizer {
+  margin-left: 14px;
+  color: @foreground;
+  padding: 0 0px;
+}
+
+#cpu {
+  font-size: 15px;
+  margin-right: 17px;
+}
+
+#power-profiles-daemon {
+  font-size: 15px;
+  padding: 0 0px;
+  margin-right: 8px;
+}
+
+#backlight {
+  font-size: 14px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+#custom-weather {
+  margin-right: 4px;
+}
+
+#custom-updatespacman {
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 12px;
+  margin-right: 16px;
+}
+
+#tray {
+  background-color: @background;
+  margin-right: 10px;
+}
+
+#idle_inhibitor {
+  margin-right: 7.5px;
+}
+
+#bluetooth {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
+#custom-expand-icon {
+  margin-right: 12px;
+}
+
+tooltip {
+  padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 8.75px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+#custom-weather {
+  margin-left: 7px;
+  margin-right: 11px;
+}
+
+#custom-weather.unavailable {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  margin-right: 0;
+  font-size: 12px;
+  padding-bottom: 1px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #ff7a93;
+}
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: #ff7a93;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 7.5px;
+  font-size: 14px;
+}
+
+#custom-voxtype.recording {
+  color: #ff7a93;
+  font-size: 14px;
+}
+
+#mpris {
+	color: @foreground;
+	animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#mpd {
+	color: @foreground;
+	animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+    }
+}
+
+/* Waybar Timer */
+ #custom-timer {
+     background-color: #1e1e2e;
+     /* color: #cdd6f4; */
+     padding: 0 3px;
+     font-size: 15px;
+     border-radius: 15px;
+     font-family: "Doto";  /* place your font here */
+      /* Link for the above font https://fonts.google.com/specimen/Doto  */
+     font-weight: 900;
+     transition: all 0.2s ease;
+ }
+
+ /* --- STATE: DISABLED (00:00, Idle) --- */
+ #custom-timer.disabled {
+     background-color: transparent;
+     color: @foreground;
+     opacity: 0.6;
+     font-weight: normal;
+     animation-duration: 1s;
+     animation-timing-function: ease-in-out;
+     animation-direction: alternate;
+ }
+
+#custom-timer.disabled:hover {
+     opacity: 1.0;
+}
+
+ /* --- STATE: IDLE (Active but 00:00) --- */
+ #custom-timer.idle {
+     background-color: transparent;
+     color: @foreground;
+ }
+
+ /* --- STATE: SELECTION MODE --- */
+ #custom-timer.select {
+     background-color: #373948;
+     color: #85b2fa;
+ }
+
+ /* --- STATE: RUNNING (Normal Timer & Pomodoro Work) --- */
+ #custom-timer.running {
+     background-color: transparent;
+     color: #cccccc;
+ }
+
+ /* --- STATE: POMODORO BREAK (New) --- */
+ #custom-timer.pomo_break {
+     background-color: transparent;
+     color: #f9e2af; /* Yellow/Gold to distinguish break from work */
+ }
+
+ /* --- STATE: POMODORO MESSAGE (New: "Work 1/4") --- */
+ #custom-timer.pomo_msg {
+     background-color: transparent;
+     color: #cba6f7; /* Lavender/Purple for status messages */
+ }
+
+ /* --- STATE: PAUSED --- */
+ #custom-timer.paused {
+     background-color: #404040;
+     color: #f9e2af;
+     /*border: 1px solid #f9e2af; */
+ }
+
+ /* --- STATE: WARNING (< 10s or 30s alert) --- */
+ #custom-timer.warning {
+     background-color: transparent;
+     animation-name: red-alert;
+     animation-duration: 1s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ }
+
+ /* --- STATE: DONE --- */
+ #custom-timer.done {
+     background-color: #bfbfbf;
+     color: #11111b;
+ }
+
+ /* --- STATE: RESET ANIMATION --- */
+ #custom-timer.reset {
+     color: #ff4d4d;
+     background-color: transparent;
+ }
+
+ /* -----------------------------------------------------------------------------
+ * KEYFRAMES: Red Color Fading
+ * ----------------------------------------------------------------------------- */
+ @keyframes red-alert {
+     0% {
+         color: #ff4d4d; /* Bright, visible Red */
+         opacity: 1;
+     }
+     100% {
+         color: #ff4d4d;
+         opacity: 0.8; /* Fade cleanly to 80% transparency */
+         text-shadow: none;
+     }
+ }
+ 
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: #ff4d4d;
+}
