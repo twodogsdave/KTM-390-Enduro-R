@@ -15,6 +15,3 @@ omarchy-theme-install http://github.com/twodogsdave/KTM-390-Enduro-R.git
 Waybar and fastfetch insluded.
 
 Omarchy theme 'Greek-Noir' was used as a base.  Thanks HANCORE.  You make great themes!
-
-Animation settings lifted by NISHANT (Discord) who made the lovely 'Omarchy-Lavendar' theme.
-
