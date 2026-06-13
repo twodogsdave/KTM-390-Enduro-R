@@ -5,7 +5,7 @@ https://www.ktm.com/en-us/models/dual-sport/2026-ktm-390-enduror.html
 
 # Installation
 
-To install this theme, use the omarchy-theme-install command:
+To install this theme, use the omarchy-theme-install command..
 
 ```bash
 omarchy-theme-install http://github.com/twodogsdave/KTM-390-Enduro-R.git
